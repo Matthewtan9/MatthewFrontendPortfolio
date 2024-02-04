@@ -3,6 +3,8 @@ import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import '../css/ContactPage.css';
+import linkedinLogo from '../images/linkedin-logo.png'; // Replace with the actual path to your LinkedIn logo
+import githubLogo from '../images/github-logo.png'; // Replace with the actual path to your GitHub logo
 
 const ContactPage = () => {
   return (
@@ -25,8 +27,18 @@ const ContactPage = () => {
 
           <div className="contact-section">
             <h3>Follow Me</h3>
-            <p><a href="https://www.linkedin.com/in/matthew-tan-b53b63289/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            <p><a href="https://github.com/Matthewtan9" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p>
+            <a href="https://www.linkedin.com/in/matthew-tan-b53b63289/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinLogo} alt="LinkedIn Logo" />
+              LinkedIn
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/Matthewtan9" target="_blank" rel="noopener noreferrer">
+              <img src={githubLogo} alt="GitHub Logo" />
+              GitHub
+            </a>
+          </p>
           </div>
 
           <div className="contact-section">

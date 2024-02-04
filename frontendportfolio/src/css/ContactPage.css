@@ -18,6 +18,17 @@
   flex: 1;
   max-width: 400px;
 }
+.contact-section a {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px; /* Add some space below each icon */
+}
+
+.contact-section a img {
+  width: 20px; /* Set the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add some space between the icon and text */
+}
 
 .contact-section {
   margin-bottom: 20px;

@@ -25,4 +25,23 @@
     border-top: 1px solid #ccc;
     color: #777;
   }
+  .footer-section a img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Optional: Add some space between the icon and text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }
+  .footer-section p img {
+    width: 20px; /* Adjust the width of the icons as needed */
+    height: 20px; /* Adjust the height of the icons as needed */
+    margin-right: 8px; /* Add some spacing between the icon and the text */
+  }
+
+
+  .footer-section img {
+    width: 20px; /* Adjust the width of the map icon as needed */
+    height: 20px; /* Adjust the height of the map icon as needed */
+    margin-right: 8px; /* Add some spacing between the icon and the text */
+ 
+  }
   
