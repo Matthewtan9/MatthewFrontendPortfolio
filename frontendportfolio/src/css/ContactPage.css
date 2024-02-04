@@ -1,0 +1,26 @@
+/* ContactPage.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.contact-form-section {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px; /* Add margin to separate the sections */
+}
+
+.contact-info-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-section {
+  margin-bottom: 20px;
+}
+
+/* Add additional styling as needed */

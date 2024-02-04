@@ -1,0 +1,27 @@
+/* ClassPage.css */
+
+.class-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .class-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  /* You can add more styles based on your design preferences */
+  

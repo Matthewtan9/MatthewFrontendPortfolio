@@ -1,0 +1,27 @@
+/* EducationPage.css */
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .education-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .education-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-item p {
+    margin-bottom: 5px;
+  }
+  
+  /* Navbar and Footer styling */
+  /* Add your own styles or reuse existing styles from your application */
+  
