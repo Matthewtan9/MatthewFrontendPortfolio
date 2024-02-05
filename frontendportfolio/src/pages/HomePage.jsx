@@ -5,6 +5,7 @@ import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import '../css/HomePage.css';
 import axios from 'axios';
+import profilePicture from '../images/Profile.jpg';
 
 
 const HomePage = () => {
@@ -65,11 +66,12 @@ const HomePage = () => {
         {users.map((user) => (
           <div key={user.user_id} className="user-details">
             {/* Add the image here */}
-            <img
-  src={process.env.PUBLIC_URL + '/images/Capture.JPG'}
-  alt="Your Name"
-  className="user-photo"
-/>
+            <img src={profilePicture} alt="Profile Picture" 
+             style={{
+              width: '200px', // Adjust the width as needed
+              height: '200px', // Adjust the height as needed
+              borderRadius: '50%', // Makes it round
+            }}/>
 
 
 

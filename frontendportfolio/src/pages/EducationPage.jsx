@@ -35,25 +35,47 @@ const EducationPage = () => {
       <div className="education-container">
         <h1>Education</h1>
         {education.map((edu) => (
-          <div key={edu.education_id} className="education-item">
-            <section>
-              <h2>Institution</h2>
-              <p>{edu.institution}</p>
-            </section>
-            <section>
-              <h2>Degree</h2>
-              <p>{edu.degree}</p>
-            </section>
-            <section>
-              <h2>Major</h2>
-              <p>{edu.major}</p>
-            </section>
-            <section>
-              <h2>Graduation Year</h2>
-              <p>{edu.graduation_year}</p>
-            </section>
-          </div>
-        ))}
+  <div key={edu.education_id} className="education-item">
+    <section>
+      <h2>Institution</h2>
+      <p>{edu.institution}</p>
+    </section>
+    <section>
+      <h2>Degree</h2>
+      <p>{edu.degree}</p>
+    </section>
+    <section>
+      <h2>Major</h2>
+      <p>{edu.major}</p>
+    </section>
+    <section>
+      <h2>Graduation Year</h2>
+      <p>{edu.graduation_year}</p>
+    </section>
+    {edu.degree === 'High School Diploma' && (
+      <section>
+        <h2>Diploma (DEC)</h2>
+        <a href="https://drive.google.com/file/d/12EE8jFsCz-Al3FrZDPXvI8VITxvMLU-p/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          View Diploma (DEC)
+        </a>
+      </section>
+    )}  {edu.degree === 'Bachelor of Science' && (
+      <section>
+        <h2>Diploma  (BAC)</h2>
+        {/* Add your link when available */}
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Coming soon
+        </a>
+        <h2>View classes:</h2>
+        {/* Add the link to navigate to http://localhost:3000/experience/class */}
+        <a href="http://localhost:3000/experience/class" target="_blank" rel="noopener noreferrer">
+          Explore Class Experience
+        </a>
+      </section>
+    )}
+    
+  </div>
+))}
       </div>
       <Footer />
     </div>
