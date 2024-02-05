@@ -57,6 +57,17 @@ VALUES ('420-N35-LA', 'SEMESTER_3', 'Intro to IOT and EMB System', 'Elaheh Mozaf
 
 --Semester 4
 
+--Semester 4
+INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
+VALUES ('420-N41-LA', 'SEMESTER_4', 'Web Development with PHP', 'Laura Marianella Zapata Aspiazu', 'PHP, Laurel, Xampp, PHPMyAdmin', 'Web development with PHP (420-N41-LA) course taught using PHP to create web applications. Pros: -Cons: Hard to understand due to accent, perceived cheating incident causing frustration, limited use of PHP nowadays.');
+INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
+VALUES ('420-N42-LA', 'SEMESTER_4', 'System Analysis and Design', 'Reza Mirsalari', 'Methodologies, Diagrams', 'System Analysis and Design course (420-N42-LA) delves into methodologies, creating diagrams, and exploring new concepts. Pros: Valuable knowledge, positive teaching experience with knowledgeable and helpful instructor. Cons: Complexities and demanding workload.');
+INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
+VALUES ('420-N43-LA', 'SEMESTER_4', 'Mobile Application Dev', 'Istiaque Shariar', 'Android IDE, Kotlin', 'Mobile Application Dev (420-N43-LA) course teaches mobile app development using Android IDE and Kotlin. Pros: Introduction to unique concept, creating mobile apps. Cons: Short assignment deadlines, complicated tests, IDE problems at the beginning of the semester.');
+INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
+VALUES ('420-N44-LA', 'SEMESTER_4', 'Game Development', 'Brendan Wood', 'Unity, Git commands', 'Game Development (420-N44-LA) course teaches gaming app development through Unity. Pros: Enjoyable experience, learning Git commands. Cons: Challenging tests, high number of slides for review.');
+INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
+VALUES ('420-N45-LA', 'SEMESTER_4', 'Web Services and Dist Comp', 'Christine Gerard', 'Microservices, Java Spring Boot', 'Web Services and Dist Comp (420-N45-LA) course covers fundamentals of microservices. Pros: Important for web development using Java Spring Boot, helpful teacher. Cons: Fast-paced lectures, difficulty keeping up, reliance on classmates for code completion.');
 
 
 --Education

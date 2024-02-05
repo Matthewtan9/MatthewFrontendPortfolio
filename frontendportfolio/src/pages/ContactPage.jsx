@@ -5,6 +5,9 @@ import ContactForm from '../components/ContactForm';
 import '../css/ContactPage.css';
 import linkedinLogo from '../images/linkedin-logo.png'; // Replace with the actual path to your LinkedIn logo
 import githubLogo from '../images/github-logo.png'; // Replace with the actual path to your GitHub logo
+import emailIcon from '../images/Gmail.jpg';
+import phoneIcon from '../images/phone.jpg';
+import mapIcon from '../images/map.png';
 
 const ContactPage = () => {
   return (
@@ -21,8 +24,8 @@ const ContactPage = () => {
         <div className="contact-info-section">
           <div className="contact-section">
             <h3>Contact Information</h3>
-            <p>Email: <a href="mailto:matthew999099@gmail.com">matthew999099@gmail.com</a></p>
-            <p>Phone: <a href="tel:+14383880273">+1 438 388 0273</a></p>
+            <p><img src={emailIcon} alt="Email Icon" /> <a href="mailto:matthew999099@gmail.com">matthew999099@gmail.com</a></p>
+            <p><img src={phoneIcon} alt="Phone Icon" /><a href="tel:+14383880273">+1 438 388 0273</a></p>
           </div>
 
           <div className="contact-section">
@@ -43,7 +46,7 @@ const ContactPage = () => {
 
           <div className="contact-section">
             <h3>Address</h3>
-            <p>820 Croissant, Quebec, Canada</p>
+            <p><img src={mapIcon} alt="Email Icon" />820 Croissant, Quebec, Canada</p>
           </div>
         </div>
 

@@ -33,5 +33,14 @@
 .contact-section {
   margin-bottom: 20px;
 }
+.contact-info-section img {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add some space between the icon and the text */
+}
 
-/* Add additional styling as needed */
+.contact-info-section p {
+  display: flex;
+  align-items: center; /* Align the text and the icon vertically */
+}
+
