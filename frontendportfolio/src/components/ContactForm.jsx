@@ -1,9 +1,14 @@
+// ContactForm.js
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 
 const ContactForm = () => {
+  const { t } = useTranslation(); // Use the t function for translations
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
   });
 
@@ -23,7 +28,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Your Name:</label>
+      <label htmlFor="name">{t('form.nameLabel')}:</label>
       <input
         type="text"
         id="name"
@@ -33,7 +38,7 @@ const ContactForm = () => {
         required
       />
 
-      <label htmlFor="email">Email:</label>
+      <label htmlFor="email">{t('form.emailLabel')}:</label>
       <input
         type="email"
         id="email"
@@ -42,9 +47,10 @@ const ContactForm = () => {
         onChange={handleChange}
         required
       />
-      <label htmlFor="subject">Subject:</label>
+
+      <label htmlFor="subject">{t('form.subjectLabel')}:</label>
       <input
-        type="subject"
+        type="text"
         id="subject"
         name="subject"
         value={formData.subject}
@@ -52,7 +58,7 @@ const ContactForm = () => {
         required
       />
 
-      <label htmlFor="message">Decripton:</label>
+      <label htmlFor="message">{t('form.messageLabel')}:</label>
       <textarea
         id="message"
         name="message"
@@ -62,7 +68,7 @@ const ContactForm = () => {
         required
       ></textarea>
 
-      <button type="submit">Send Message</button>
+      <button type="submit">{t('form.submitButton')}</button>
     </form>
   );
 };

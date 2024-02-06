@@ -1,11 +1,14 @@
+// ProjectPage.js
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import axios from 'axios';
 import Select from 'react-select'; // Import react-select
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import '../css/ProjectPage.css';
 
 const ProjectPage = () => {
+  const { t } = useTranslation(); // Use the t function for translations
   const [projects, setProjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedProjectType, setSelectedProjectType] = useState('');
@@ -45,50 +48,50 @@ const ProjectPage = () => {
     <div>
       <Navbar />
       <div className="project-container">
-        <h1>Projects</h1>
+        <h1>{t('project.title')}</h1>
         <div className="search-container">
           <input
             type="text"
-            placeholder="Search by project skill"
+            placeholder={t('project.searchPlaceholder')}
             value={searchTerm}
             onChange={handleSearch}
           />
-          <label htmlFor="projectTypeSearch">Search by Project Type:</label>
+          <label htmlFor="projectTypeSearch">{t('project.searchLabel')}</label>
           <Select
             id="projectTypeSearch"
             value={{ value: selectedProjectType, label: selectedProjectType }}
             onChange={handleProjectTypeChange}
             options={[
-              { value: '', label: 'All Types' },
-              { value: 'TEAMWORK', label: 'TEAMWORK' },
-              { value: 'INDIVIDUAL', label: 'INDIVIDUAL' },
+              { value: '', label: t('project.allTypes') },
+              { value: 'TEAMWORK', label: t('project.teamwork') },
+              { value: 'INDIVIDUAL', label: t('project.individual') },
             ]}
           />
         </div>
         {filteredProjects.map((project) => (
           <div key={project.project_id} className="project-item">
             <section>
-              <h2>Name</h2>
+              <h2>{t('project.name')}</h2>
               <p>{project.projectName}</p>
             </section>
             <section>
-              <h2>Duration</h2>
+              <h2>{t('project.duration')}</h2>
               <p>{project.projectDuration}</p>
             </section>
             <section>
-              <h2>Description</h2>
+              <h2>{t('project.description')}</h2>
               <p>{project.projectDescription}</p>
             </section>
             <section>
-              <h2>Type</h2>
+              <h2>{t('project.type')}</h2>
               <p>{project.projectType}</p>
             </section>
             <section>
-              <h2>Skill</h2>
+              <h2>{t('project.skill')}</h2>
               <p>{project.projectSkill}</p>
             </section>
             <section>
-              <h2>Github Link</h2>
+              <h2>{t('project.githubLink')}</h2>
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
