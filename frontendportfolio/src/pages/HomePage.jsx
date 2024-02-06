@@ -1,5 +1,3 @@
-// pages/HomePage.js
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -7,8 +5,10 @@ import '../css/HomePage.css';
 import axios from 'axios';
 import profilePicture from '../images/Profile.jpg';
 
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const HomePage = () => {
+  const { t } = useTranslation(); // Use the t function for translations
   const [users, setUsers] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
   const [currentSection, setCurrentSection] = useState('aboutMe'); // Initial section
@@ -37,8 +37,7 @@ const HomePage = () => {
     // Update the dots state based on the current section
     setDotNavigation(prevDots => prevDots.map((_, index) => index === (currentSection === 'aboutMe' ? 1 : 0)));
   };
-  
-  
+
   const handleDotClick = (index) => {
     // Handle dot click to switch to the corresponding section
     setCurrentSection(index === 0 ? 'aboutMe' : 'hobbies');
@@ -58,10 +57,10 @@ const HomePage = () => {
     };
   }, [currentSection]);
 
-  return (
+  return (  
     <div className="homepage-container">
       <Navbar />
-
+ 
       <header className="header-section">
         {users.map((user) => (
           <div key={user.user_id} className="user-details">
@@ -73,26 +72,23 @@ const HomePage = () => {
               borderRadius: '50%', // Makes it round
             }}/>
 
-
-
-
             <div className="section-toggle left-arrow" onClick={handleSectionChange}>
               {/* Show "<" symbol here */}
               <span>&lt;</span>
             </div>
             {currentSection === 'aboutMe' && (
               <section className={`about-me-section slide-up ${isVisible ? 'visible' : ''}`}>
-                <h2>Hello! I'm {user.firstName} {user.lastName},</h2>
+                <h2>{t('aboutMe.greeting', { firstName: user.firstName, lastName: user.lastName })}</h2>
                 <p>
-                  I am a software developer who pursued a major in computer science at Champlain College. I've passionately honed my skills and collaborated on various projects with diverse teams.
+                  {t('aboutMe.description')}
                 </p>
               </section>
             )}
             {currentSection === 'hobbies' && (
               <section className={`hobby slide-up ${isVisible ? 'visible' : ''}`}>
-                <h2>Hobbies</h2>
+                <h2>{t('hobbies.title')}</h2>
                 <p>
-                  What I enjoy doing on my free time is playing video games since I have a passion for it, and I love watching anime, a Japanese form of entertainment that intrigues me.
+                  {t('hobbies.description')}
                 </p>
               </section>
             )}
@@ -110,15 +106,15 @@ const HomePage = () => {
               <span>&gt;</span>
             </div>
             <section className={`download-cv-section slide-up ${isVisible ? 'visible' : ''}`}>
-              <h2>My CV</h2>
-              <p>Click the link below to download my CV:</p>
+              <h2>{t('cv.title')}</h2>
+              <p>{t('cv.description')}</p>
               <a
                 href="https://drive.google.com/file/d/1sRdWYdzG43keUum_0vFJMjUMaNeW0Qdm/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Matthew_Tan_CV.pdf" // Set the desired filename
               >
-                Download CV
+                {t('cv.download')}
               </a>
             </section>
           </div>

@@ -1,12 +1,12 @@
-// WorkPage.js
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import '../css/WorkPage.css';
 
 const WorkPage = () => {
+  const { t } = useTranslation(); // Use the t function for translations
   const [works, setWorks] = useState([]);
 
   useEffect(() => {
@@ -26,34 +26,33 @@ const WorkPage = () => {
     <div>
       <Navbar />
       <div className="work-container">
-        <h1>Job Worked</h1>
+        <h1>{t('work.work')}</h1>
         {works.map((work) => (
           <div key={work.id} className="work-item">
             <section>
-              <h2>Title</h2>
+              <h2>{t('work.jobTitle')}</h2>
               <p>{work.workTitle}</p>
             </section>
             <section>
-              <h2>Place</h2>
+              <h2>{t('work.place')}</h2>
               <p>{work.workPlaceName}</p>
             </section>
             <section>
-              <h2>Location</h2>
+              <h2>{t('work.location')}</h2>
               <p>{work.location}</p>
             </section>
             <section>
-              <h2>Duration</h2>
+              <h2>{t('work.duration')}</h2>
               <p>{work.duration}</p>
             </section>
             <section>
-              <h2>Status</h2>
+              <h2>{t('work.status')}</h2>
               <p>{work.status}</p>
             </section>
             <section>
-              <h2>Description</h2>
+              <h2>{t('work.description')}</h2>
               <p>{work.description}</p>
             </section>
-            
           </div>
         ))}
       </div>

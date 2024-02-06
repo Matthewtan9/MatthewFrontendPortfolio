@@ -6,13 +6,16 @@ import githubLogo from '../images/github-logo.png'; // Replace with the actual p
 import emailIcon from '../images/Gmail.jpg'; // Replace with the actual path to your email icon
 import phoneIcon from '../images/phone.jpg'; // Replace with the actual path to your phone icon
 import mapIcon from '../images/map.png';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const Footer = () => {
+  const { t } = useTranslation(); // Use the t function for translations
+
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Contact Information</h3>
+          <h3>{t('footer.contactInformation')}</h3>
           <p>
             { /* Replace with your email icon */}
             <img src={emailIcon} alt="Email Icon" />
@@ -25,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-section">
-          <h3>Follow Me</h3>
+          <h3>{t('footer.followMe')}</h3>
           <p>
             <a href="https://www.linkedin.com/in/matthew-tan-b53b63289/" target="_blank" rel="noopener noreferrer">
               <img src={linkedinLogo} alt="LinkedIn Logo" />
@@ -40,13 +43,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-section">
-          <h3>Address</h3>
-        <img src={mapIcon} alt="map Icon" />
-          820 Croissant, Quebec, Canada
+          <h3>{t('footer.addressTitle')}</h3>
+          <img src={mapIcon} alt="map Icon" />
+          {t('footer.address')}
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Matthew Tan's Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 {t("footer.Matthew Tan's Portfolio. All rights reserved.")}</p>
       </div>
     </footer>
   );
