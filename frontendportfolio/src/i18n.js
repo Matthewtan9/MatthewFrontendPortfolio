@@ -12,6 +12,11 @@ i18next
     resources: {
       en: {
         translation: {
+          languages: {
+            English: "English",
+            French: "French",
+          },
+          
           navBar: {
             Home: "Home",
             Experience: "Experience",
@@ -40,7 +45,7 @@ i18next
             phoneNumber: "+1 438 388 0273",
             followMe: "Follow Me",
             addressTitle: "Address",
-            address: "820 Croissant, Quebec, Canada",
+            address: "Brossard, Quebec, Canada",
             footerBottom: "© 2024 Matthew Tan's Portfolio. All rights reserved.",
           },
           Experience: "My Experiences",
@@ -84,8 +89,8 @@ i18next
             major: 'Major',
             graduationYear: 'Graduation Year',
             diploma: 'Diploma',
-            viewDiploma: 'View Diploma (DEC)',
-            comingSoon: 'Coming soon',
+            viewDiploma: 'HighSchool Diploma',
+            comingSoon: '(DEC)Coming soon',
             viewClasses: 'View Classes:',
             exploreClassExperience: 'Explore Class Experience',
           },
@@ -111,7 +116,7 @@ i18next
             phoneNumber: '+1 438 388 0273',
             followTitle: 'Follow Me',
             addressTitle: 'Address',
-            address: '820 Croissant, Quebec, Canada',
+            address: 'Brossard, Quebec, Canada',
           },
           form: {
             nameLabel: 'Your Name',
@@ -120,6 +125,8 @@ i18next
             messageLabel: 'Description',
             submitButton: 'Send Message',
           },    
+        
+    
       },
     },
       fr: {
@@ -152,7 +159,7 @@ i18next
             phoneNumber: "+1 438 388 0273",
             followMe: "Suivez-moi",
             addressTitle: "Adresse",
-            address: "820 Croissant, Québec, Canada",
+            address: "Brossard, Québec, Canada",
             footerBottom: "© 2024 Portfolio de Matthew Tan. Tous droits réservés.",
           },
           Experience: "Mes Expériences",
@@ -196,8 +203,8 @@ i18next
             major: 'Majeur',
             graduationYear: "Année d'obtention",
             diploma: 'Diplôme',
-            viewDiploma: 'Voir le diplôme (DEC)',
-            comingSoon: 'Bientôt disponible',
+            viewDiploma: 'Diplome Etude Secondaire (DES)',
+            comingSoon: '(DEC)Bientôt disponible',
             viewClasses: 'Voir les cours :',
             exploreClassExperience: "Explorer l'expérience des cours",
           },
@@ -223,7 +230,7 @@ i18next
             phoneNumber: '+1 438 388 0273',
             followTitle: 'Suivez-moi',
             addressTitle: 'Adresse',
-            address: '820 Croissant, Québec, Canada',
+            address: 'Brossard, Québec, Canada',
           },
           form: {
             nameLabel: 'Votre nom',
@@ -232,6 +239,12 @@ i18next
             messageLabel: 'Description',
             submitButton: 'Envoyer le message',
           },
+          languages: {
+            English: "Anglais",
+            French: "Français",
+          },
+      
+    
           
         },
       },

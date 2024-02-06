@@ -11,6 +11,8 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 ---
+
+
 # for docker
 
 spring:
@@ -31,6 +33,17 @@ spring:
     init:
       platform: mysql
       mode: always
+
+#  mail:
+#    host: smtp.gmail.com
+#    username: matthew999099@gmail.com
+#    password: ocvzrjmtvwqhtqtm
+#    port: 587
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls.enable: true
 
 server.port: 8080
 

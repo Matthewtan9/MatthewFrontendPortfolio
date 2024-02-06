@@ -55,9 +55,8 @@ const EducationPage = () => {
             {edu.degree === 'High School Diploma' && (
               <section>
                 <h2>{t('education.diploma')}</h2>
-                <a href="https://drive.google.com/file/d/12EE8jFsCz-Al3FrZDPXvI8VITxvMLU-p/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  {t('education.viewDiploma')}
-                </a>
+               {t('education.viewDiploma')}
+               
               </section>
             )}
             {edu.degree === 'Bachelor of Science' && (
