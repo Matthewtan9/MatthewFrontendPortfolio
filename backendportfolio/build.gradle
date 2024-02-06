@@ -52,6 +52,9 @@ dependencies {
 			"org.projectlombok:lombok:${lombokVersion}",
 			"org.projectlombok:lombok-mapstruct-binding:${lombokMapstructBindingVersion}"
 	testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
 }
 
 jacocoTestCoverageVerification {

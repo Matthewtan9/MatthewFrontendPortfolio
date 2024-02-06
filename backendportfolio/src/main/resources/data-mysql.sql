@@ -56,8 +56,6 @@ INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, descr
 VALUES ('420-N35-LA', 'SEMESTER_3', 'Intro to IOT and EMB System', 'Elaheh Mozaffari', 'IOT, ARDUINO', 'Intro to IOT course using Arduino for mini-computer projects. Pros: Fun course, hands-on experience. Cons: Lack of communication, grading surprises.');
 
 --Semester 4
-
---Semester 4
 INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
 VALUES ('420-N41-LA', 'SEMESTER_4', 'Web Development with PHP', 'Laura Marianella Zapata Aspiazu', 'PHP, Laurel, Xampp, PHPMyAdmin', 'Web development with PHP (420-N41-LA) course taught using PHP to create web applications. Pros: -Cons: Hard to understand due to accent, perceived cheating incident causing frustration, limited use of PHP nowadays.');
 INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
@@ -69,5 +67,8 @@ VALUES ('420-N44-LA', 'SEMESTER_4', 'Game Development', 'Brendan Wood', 'Unity, 
 INSERT INTO classes (class_id, semester, class_name, teacher_name, skills, description)
 VALUES ('420-N45-LA', 'SEMESTER_4', 'Web Services and Dist Comp', 'Christine Gerard', 'Microservices, Java Spring Boot', 'Web Services and Dist Comp (420-N45-LA) course covers fundamentals of microservices. Pros: Important for web development using Java Spring Boot, helpful teacher. Cons: Fast-paced lectures, difficulty keeping up, reliance on classmates for code completion.');
 
+--Semester 5
+
+--Semester 6
 
 --Education

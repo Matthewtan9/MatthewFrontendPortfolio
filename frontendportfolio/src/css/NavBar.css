@@ -1,42 +1,40 @@
-/* Navbar.css */
+/* Add this to your existing NavBar.css file or create a new one */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem; /* Increase padding for more space */
-  background-color: #333;
-  color: white;
+  background-image: url('background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Set text color to contrast with the background */
 }
 
 .navbar-left {
-  display: flex;
-  align-items: center;
+  flex-grow: 1;
 }
 
 .navbar-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 2rem; /* Increase margin for more space */
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .navbar-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-item {
-  margin-right: 5rem; /* Increase margin for more space */
+  margin: 0 10px;
 }
 
 .navbar-link {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s ease-in-out;
+  color: white; /* Set link color */
 }
 
-.navbar-link:hover {
-  color: #593ceb; /* Change the color on hover */
-}
+/* Rest of your existing styles remain unchanged */
