@@ -5,71 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eab4951-7a9e-4579-b570-d70c544ee1d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backendportfolio/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/BusinessLayer/ClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/BusinessLayer/ClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/BusinessLayer/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/BusinessLayer/ClassServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/DataLayer/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/DataLayer/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/DataLayer/ClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/DataLayer/ClassRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/DataLayer/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/DataLayer/Semester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/DataMapperLayer/ClassRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/DataMapperLayer/ClassRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/DataMapperLayer/ClassResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/DataMapperLayer/ClassResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Classes/PresentationLayer/ClassResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/BusinessLayer/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/BusinessLayer/EducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/BusinessLayer/EducationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/BusinessLayer/EducationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/DataLayer/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/DataLayer/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/DataLayer/EducationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/DataLayer/EducationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/DataMapperLayer/EducationRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/DataMapperLayer/EducationRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/DataMapperLayer/EducationResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/DataMapperLayer/EducationResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationReponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationReponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Education/PresentationLayer/EducationRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/PortfolioApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/backendportfolioApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/BusinessLayer/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/BusinessLayer/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/BusinessLayer/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/BusinessLayer/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/DataLayer/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/DataLayer/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/DataLayer/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/DataLayer/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/DataLayer/ProjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/DataLayer/ProjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/DataMapperLayer/ProjectRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/DataMapperLayer/ProjectRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/DataMapperLayer/ProjectResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/DataMapperLayer/ProjectResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Projects/PresentationLayer/ProjectResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/BusinessLayer/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/BusinessLayer/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/BusinessLayer/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/BusinessLayer/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/DataLayer/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/DataLayer/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/DataLayer/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/DataLayer/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/DataMapperLayer/UserRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/DataMapperLayer/UserRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/DataMapperLayer/UserResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/DataMapperLayer/UserResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UserRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UserResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Users/PresentationLayer/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/BusinessLayer/WorkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/BusinessLayer/WorkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/BusinessLayer/WorkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/BusinessLayer/WorkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataLayer/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataLayer/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataLayer/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataLayer/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataLayer/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataLayer/Work.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataLayer/WorkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataLayer/WorkRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataMapperLayer/WorkRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataMapperLayer/WorkRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/DataMapperLayer/WorkResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/DataMapperLayer/WorkResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/java/matthew/portfolio/Work/PresentationLayer/WorkResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/resources/data-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/resources/data-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/resources/schema-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/main/resources/schema-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/test/java/matthew/portfolio/PortfolioApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backendportfolio/src/test/java/matthew/portfolio/backendportfolioApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Portfolio.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Portfolio.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PortfolioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.backendportfolioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Computer Science 8/COMPREHENSIVE ASSESSMENT/PortfolioSite&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build Portfolio.executor": "Run",
+    "Gradle.Portfolio.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.PortfolioApplication.executor": "Run",
+    "Spring Boot.backendportfolioApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Computer Science 8/COMPREHENSIVE ASSESSMENT/PortfolioSite",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <myKeys>
       <visibility group="Gradle Tasks" flag="true" />
@@ -197,6 +133,7 @@
       <workItem from="1707008684699" duration="16000" />
       <workItem from="1707008712325" duration="48000" />
       <workItem from="1707008774135" duration="77000" />
+      <workItem from="1707508012899" duration="660000" />
     </task>
     <servers />
   </component>
