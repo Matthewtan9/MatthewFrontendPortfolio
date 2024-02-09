@@ -1,4 +1,7 @@
 build:
-  docker:
-    web: /backendportfolio/Dockerfile
-    frontend: ./frontendportfolio/Dockerfile
+  frontend:
+    docker:
+      web: frontendportfolio/Dockerfile
+  backend:
+    docker:
+      web: backendportfolio/Dockerfile
