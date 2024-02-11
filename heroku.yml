@@ -1,7 +1,0 @@
-build:
-  frontend:
-    docker:
-      web: frontendportfolio/Dockerfile
-  backend:
-    docker:
-      web: backendportfolio/Dockerfile

@@ -54,7 +54,14 @@ dependencies {
 	testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
 
 
-	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.postgresql:postgresql:42.6.0'
+
+//	runtimeOnly 'org.postgresql:postgresql'
+
+
+
+
+
 }
 
 jacocoTestCoverageVerification {
