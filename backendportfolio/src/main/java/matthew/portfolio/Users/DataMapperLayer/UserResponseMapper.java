@@ -3,13 +3,13 @@ package matthew.portfolio.Users.DataMapperLayer;
 
 import matthew.portfolio.Users.DataLayer.User;
 import matthew.portfolio.Users.PresentationLayer.UserResponseDTO;
+import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import java.util.List;
 
 @Mapper(componentModel = "spring")
-
 public interface UserResponseMapper {
 
 

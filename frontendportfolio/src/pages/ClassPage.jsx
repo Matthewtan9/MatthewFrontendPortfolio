@@ -18,7 +18,7 @@ const ClassPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/classes');
+        const response = await axios.get('https://matbackend-9de9524bac3c.herokuapp.com/classes');
         setClasses(response.data);
 
         // Extract all unique skills from classes
