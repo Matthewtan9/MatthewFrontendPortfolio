@@ -3,6 +3,10 @@
     background-color: #333;
     color: white;
     padding: 10px 0;
+    background-image: url('background.jpg'); /* Adjust the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
   }
   
   .footer-content {
