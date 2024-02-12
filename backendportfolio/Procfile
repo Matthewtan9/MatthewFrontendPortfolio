@@ -1,1 +1,0 @@
-web: java -Dserver.port=$PORT -jar backendportfolio-0.0.1-SNAPSHOT-plain.jar

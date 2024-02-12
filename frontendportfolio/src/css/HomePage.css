@@ -213,3 +213,14 @@ h1 {
 .active {
   background-color: #007bff; /* Set the active dot color */
 }
+
+/* src/css/HomePage.css */
+body {
+  /* background-image: url('background.jpg');  */
+  background-size: cover; /* Cover the entire viewport */
+
+  background-position: center; /* Center the background image */
+}
+.h2{
+  color : white;
+}
