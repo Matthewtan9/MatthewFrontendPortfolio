@@ -17,7 +17,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/users');
+        const response = await axios.get('https://matbackend-9de9524bac3c.herokuapp.com/users');
         setUsers(response.data);
         setIsVisible(true);
       } catch (error) {

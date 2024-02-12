@@ -16,7 +16,7 @@ const ProjectPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/projects');
+        const response = await axios.get('https://matbackend-9de9524bac3c.herokuapp.com/projects');
         setProjects(response.data);
       } catch (error) {
         console.error('Error fetching project data:', error);
