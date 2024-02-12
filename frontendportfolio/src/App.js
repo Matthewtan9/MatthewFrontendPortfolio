@@ -1,7 +1,8 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './i18n.js'
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import HomePage from './pages/HomePage';
 import WorkPage  from './pages/WorkPage';
 import ContactPage from './pages/ContactPage';
