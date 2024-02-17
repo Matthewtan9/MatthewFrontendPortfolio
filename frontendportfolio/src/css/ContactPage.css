@@ -2,17 +2,19 @@
 
 .contact-container {
   display: flex;
-  justify-content: space-around;
-  margin: 50px auto;
+  justify-content: center; /* Center horizontally */
+  margin-top: 50px; /* Adjust margin as needed */
 }
 
 .contact-form-section,
 .contact-info-section {
-  flex: 1;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 10px; /* Add margin to create space around elements */
+  max-width: 400px; /* Set a maximum width for the sections */
 }
 
 .contact-form-section h3,
@@ -38,3 +40,17 @@
 .contact-section a:hover {
   text-decoration: underline;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-title {
+  animation: fadeIn 3s ease forwards;
+
+}
+

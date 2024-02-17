@@ -11,6 +11,7 @@ import EducationPage from './pages/EducationPage';
 import ClassPage from './pages/ClassPage';
 import FeedbackPage from './pages/FeedbackPage';
 import ExperiencePage from './pages/ExperiencePage';
+import AboutMePage from './pages/AboutMePage';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutMePage />} />
           <Route path="/experience" element={<ExperiencePage/>}/>
           <Route path="/project" element={<ProjectPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>

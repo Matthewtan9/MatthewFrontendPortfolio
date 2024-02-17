@@ -1,0 +1,227 @@
+  /* General Styles */
+
+
+  .text-content {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    color: #0066cc;
+  }
+
+  .role {
+    color: #009900;
+    font-weight: bold;
+  }
+
+  .description {
+    color: #666;
+  }
+
+  
+
+  /* Box Styles */
+  .about-me-section,
+  .hobby,
+  .download-cv-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .download-cv-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .download-cv-section h2 {
+    color: #333;
+  }
+
+  .download-cv-section p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .download-cv-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-cv-section a:hover {
+    background-color: #0056b3;
+  }
+
+  /* User Styles */
+  .user-info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-photo-container {
+    width: 150px;
+    flex-shrink: 0;
+  }
+
+  .user-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+
+  /* Slide Effect */
+  .slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Arrows and Navigation Dots */
+  .section-toggle,
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  } 
+
+  .dot-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+ 
+
+  /* Homepage Specific Styles */
+  body {
+    background-size: cover;
+    background-position: center;
+    background-color: light rgb(109, 11, 11);
+
+
+  }
+  .text {
+    margin-right: 20px;
+    color: #333; /* Dark gray color */
+  }
+  
+
+  .h2 {
+    color: white;
+  }
+/* HomePage.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.welcome-title {
+  animation: fadeIn 3s ease forwards;
+
+}
+
+
+
+
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill p {
+  margin: 0;
+}
+
+.skill-bar {
+  width: 200px; /* Adjust as needed */
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+}
+
+.high {
+  width: 90%; /* High skill level width */
+  background-color: #4caf50; /* High skill level color */
+}
+
+.medium {
+  width: 60%; /* Medium skill level width */
+  background-color: #ff9800; /* Medium skill level color */
+}
+
+.low {
+  width: 30%; /* Low skill level width */
+  background-color: #f44336; /* Low skill level color */
+}
+

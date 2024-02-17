@@ -34,6 +34,10 @@ const ProjectPage = () => {
     setSelectedProjectType(selectedOption.value);
   };
 
+  const githubLinkForFrontend = "https://github.com/Matthewtan9/MatthewFrontendPortfolio";
+  const githubLinkForBackend = "https://github.com/Matthewtan9/MatthewBackendPortfolio";
+  const githubLinkId = "b674e8b4-cc45-44cd-87c9-8499d0df26ef";
+
   const filteredProjects = projects.filter((project) => {
     const typeMatch =
       selectedProjectType === '' || project.projectType.toLowerCase() === selectedProjectType.toLowerCase();
@@ -48,7 +52,7 @@ const ProjectPage = () => {
     <div>
       <Navbar />
       <div className="project-container">
-        <h1>{t('project.title')}</h1>
+      <h1 className="welcome-title">{t('project.title')}</h1>
         <div className="search-container">
           <input
             type="text"
@@ -90,16 +94,31 @@ const ProjectPage = () => {
               <h2>{t('project.skill')}</h2>
               <p>{project.projectSkill}</p>
             </section>
-            <section>
-              <h2>{t('project.githubLink')}</h2>
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </section>
+            {project.projectName === 'Matthew Tan Portfolio' ? (
+  <section>
+    <h2>Frontend Link:</h2>
+    <a href={githubLinkForFrontend} target="_blank" rel="noopener noreferrer">
+     Github(Frontend)
+    </a>
+    <h2>Backend Link:</h2>
+    <a href={githubLinkForBackend} target="_blank" rel="noopener noreferrer">
+      GitHub (Backend)
+    </a>
+  </section>
+
+) : (
+  <section>
+    <h2>{t('project.githubLink')}</h2>
+    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+      GitHub
+    </a>
+  </section>
+)}
+
           </div>
         ))}
       </div>
-      <Footer />
+    
     </div>
   );
 };

@@ -1,6 +1,6 @@
 /* ExperiencePage.css */
 .experience-page {
-    display: flex;
+    display: center;
     flex-direction: column;
     min-height: 100vh; /* Set minimum height to 100% of the viewport height */
   }
@@ -30,4 +30,8 @@
     color: #2071db;
 }
 
-
+.experience-content {
+    margin-left: 220px; /* Adjust according to navbar width */
+    padding: 20px; /* Add padding to ensure content is not hidden behind the navbar */
+  }
+  

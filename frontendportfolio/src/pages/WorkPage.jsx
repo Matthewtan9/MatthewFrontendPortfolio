@@ -56,7 +56,7 @@ const WorkPage = () => {
           </div>
         ))}
       </div>
-      <Footer />
+     
     </div>
   );
 };

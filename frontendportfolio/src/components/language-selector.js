@@ -10,21 +10,23 @@ const languages = [
 const LanguageSelector = () => {
   const { i18n, t } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng.code);
+  const changeLanguage = (e) => {
+    const selectedLanguageCode = e.target.value;
+    i18n.changeLanguage(selectedLanguageCode);
   };
 
   return (
-    <div className="btn-container">
-      {languages.map((lng) => (
-        <button
-          className={lng.code === i18n.language ? "selected" : ""}
-          key={lng.code}
-          onClick={() => changeLanguage(lng)}
-        >
-          {t(`languages.${lng.langKey}`)}
-        </button>
-      ))}
+    <div className="select-container">
+      <select
+        value={i18n.language}
+        onChange={changeLanguage}
+      >
+        {languages.map((lng) => (
+          <option key={lng.code} value={lng.code}>
+            {t(`languages.${lng.langKey}`)}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

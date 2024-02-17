@@ -120,7 +120,7 @@ const ClassPage = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

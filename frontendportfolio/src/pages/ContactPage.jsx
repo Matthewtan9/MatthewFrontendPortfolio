@@ -16,8 +16,9 @@ const ContactPage = () => {
 
   return (
     <div>
+     
       <Navbar />
-      <h1>{t('contact.title')}</h1>
+      <h1 className="welcome-title">{t('contact.title')}</h1>
 
       <div className="contact-container">
         {/* Contact Form Section */}
@@ -65,8 +66,6 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,25 +1,41 @@
+/* Translation.css */
 .btn-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
-  
-  button.selected {
-    background-color: #2ecc71;
-    border-color: #2ecc71;
-  }
-  
+  position: relative;
+}
+
+.btn-container button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-container button.selected {
+  font-weight: bold;
+}
+
+.btn-container .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.btn-container button:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-container button:focus {
+  outline: none;
+}
+
+.btn-container button:focus + .dropdown-content {
+  display: block;
+}

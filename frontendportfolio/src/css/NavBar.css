@@ -1,40 +1,85 @@
-/* Add this to your existing NavBar.css file or create a new one */
-
+/* Navbar.css */
 .navbar {
+  border-top: 2px solid #ccc; /* Add a border at the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 160px; /* Adjust width as needed */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url('background.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Set text color to contrast with the background */
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px; /* Adjust padding as needed */
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  border-right: 2px solid black; /* Add border to the right side of the navbar */
 }
-
-.navbar-left {
-  flex-grow: 1;
-}
-
+/* NavBar.css */
 .navbar-name {
-  font-size: 1.5em;
-  margin: 0;
+  border-top: 2px solid #ccc; /* Add a border at the top */
+  font-size: 24px; /* Adjust font size as needed */
+
+  font-weight: bold;
+  color: lightBlue; /* Set the color to your desired value */
+  /* You can also add other styles such as text-shadow, font-family, etc. */
 }
+
+
 
 .navbar-list {
+  border-top: 2px solid #ccc; /* Add a border at the top */
   list-style-type: none;
-  display: flex;
+  
   margin: 0;
-  padding: 0;
+  padding:140px 0 30px;
+
 }
 
 .navbar-item {
-  margin: 0 10px;
+  margin-bottom: 10px; /* Adjust margin between items */
 }
 
 .navbar-link {
   text-decoration: none;
-  color: white; /* Set link color */
+  color: black;
+  position: relative; /* Make sure the position is relative for the :after pseudo-element */
 }
 
-/* Rest of your existing styles remain unchanged */
+/* Add style for selected navbar item */
+.navbar-link:after {
+  content: ''; /* Add empty content */
+  position: absolute; /* Position the border line absolutely */
+  bottom: -2px; /* Adjust the distance of the border line from the text */
+  left: 0; /* Start the border line from the left */
+  width: 0; /* Initially set the width to 0 */
+
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.navbar-link.active:after {
+  width: 100%; /* Make the border line span the entire width of the navbar item when active */
+}
+
+/* Main content */
+.main-content {
+  margin-left: 200px; /* Adjust according to navbar width */
+  /* Add any additional styles for the main content */
+  padding: 20px; /* Add padding to ensure content is not hidden behind the navbar */
+}
+.navbar-link.active {
+  border-bottom: 2px solid blue; 
+}
+/* NavBar.css */
+
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0 40px; /* Adjust the padding top to 20px */
+  border-top: 2px solid #ccc; /* Add a border at the top */
+  text-align: center; /* Center-align the text */
+}
