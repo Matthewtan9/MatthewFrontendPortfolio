@@ -1,4 +1,12 @@
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,8 @@
 .welcome {
   font-size: 36px;
   margin-bottom: 10px;
+  color: SlateBlue
+  ;
 }
 
 .name {
@@ -47,9 +57,18 @@
 
 
 .homepage-border {
-
-  padding: 20px; /* Adjust padding as needed */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  /* Adjust margin to position the border */
+  margin: 10px 200px 20px 300px; /* Increase the right margin value */
+  /* Adjust width as needed */
+  width: 100%;
+  /* Adjust max-width as needed */
+  max-width: 1050px;
 }
+
+
 
 .content {
   display: flex;
@@ -60,8 +79,12 @@
 
 
 .profile-picture img {
-  width: 200px; /* Adjust the size of the profile picture */
+  width: 200px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect for depth */
 }
+
+
 
 .fade-in .text,
 .fade-in .profile-picture img {
@@ -108,3 +131,45 @@
 
 
 
+.Title{
+  color: darkblue;
+}
+.icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  padding-left:30px;
+  margin-right: 1px; /* Adjust spacing between icons */
+}
+/* Add this at the end of your HomePage.css */
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  animation: bounce 2s infinite; /* Add a bounce animation */
+}
+
+.scroll-text {
+  font-size: 14px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

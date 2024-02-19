@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from 'react';
+// HomePage.js
+import React, { useEffect, useRef, useState } from 'react';
 import '../css/HomePage.css';
 import NavBar from '../components/NavBar';
 import AboutMePage from './AboutMePage';
-import profilePicture from '../images/Profile.png'; // Import your profile picture
-import ExperiencePage from './ExperiencePage';
+import profilePicture from '../images/Profile.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = ({ name }) => {
   const [fadeIn, setFadeIn] = useState(false);
   const [typingText, setTypingText] = useState('');
-  const [isTyping, setIsTyping] = useState(true); // Track whether currently typing or not
-  const [showVerticalLine, setShowVerticalLine] = useState(true); // Track whether to show the vertical line or not
+  const [isTyping, setIsTyping] = useState(true);
   const description = "I am a Software Developer";
-  const typingDelay = 100; // Delay between each character
-  const retypeDelay = 3000; // Time interval to retype the text
-  const pauseDuration = 3000; // Time to pause before resetting typing
+  const typingDelay = 100;
+  const retypeDelay = 3000;
+  const pauseDuration = 3000;
+
+  const aboutMeRef = useRef(null);
 
   useEffect(() => {
-    // Trigger animation after component mounts
     setFadeIn(true);
-
-    // Start typing effect
     typeText(description, 0);
 
-    // Function to handle typing effect and loop
     function typeText(text, index) {
       if (index <= text.length) {
         setTypingText(text.substring(0, index));
@@ -30,41 +30,32 @@ const HomePage = ({ name }) => {
           typeText(text, index + 1);
         }, typingDelay);
       } else {
-        setIsTyping(false); // Typing finished, set isTyping to false
+        setIsTyping(false);
         setTimeout(() => {
-          setShowVerticalLine(!showVerticalLine); // Toggle vertical line visibility
           setTypingText('');
           setIsTyping(true);
-          setTimeout(() => {
-            typeText(description, 0);
-          }, typingDelay);
+          typeText(description, 0);
         }, pauseDuration);
       }
     }
 
-    // Clear interval on component unmount
     return () => clearInterval();
   }, []);
 
-  // Smooth scrolling function
-  const scrollToRef = (ref) => {
-    if (ref.current) {
+  const scrollToAbout = () => {
+    if (aboutMeRef.current) {
       window.scrollTo({
-        top: ref.current.offsetTop,
+        top: aboutMeRef.current.offsetTop,
         behavior: 'smooth'
       });
     }
   };
 
-  // Refs for sections
-  const aboutMeRef = React.useRef(null);
-  const experienceRef = React.useRef(null);
-
   return (
     <div className="homepage-border">
       <div className={`homepage-container ${fadeIn ? 'fade-in' : ''}`}>
-        <NavBar scrollToAbout={() => scrollToRef(aboutMeRef)} scrollToExperience={() => scrollToRef(experienceRef)} />
-        <h1>Welcome To My Portfolio</h1>
+        <NavBar scrollToAbout={scrollToAbout} />
+        <h1 className='Title'>Welcome To My Portfolio</h1>
         <div className="content">
           <div className="text">
             <h1 className="welcome">Matthew Tan</h1>
@@ -72,13 +63,26 @@ const HomePage = ({ name }) => {
               {typingText}
               <span className={`vertical-line ${!isTyping ? 'blink-animation' : ''}`}>|</span>
             </h2>
+            <div className="social-icons">
+              <a href="https://github.com/Matthewtan9" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/matthew-tan-b53b63289/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              </a>
+            </div>
           </div>
           <div className="profile-picture">
             <img src={profilePicture} alt="Profile" />
           </div>
         </div>
       </div>
-      <AboutMePage/>
+      <div className="scroll-down">
+        <FontAwesomeIcon icon={faArrowDown} className="scroll-icon" />
+        <span className="scroll-text">Scroll Down</span>
+      </div>
+      
+      <AboutMePage ref={aboutMeRef}/>
     </div>
   );
 };
