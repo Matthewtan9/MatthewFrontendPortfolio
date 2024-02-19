@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faProjectDiagram, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -9,22 +9,37 @@ import '../css/NavBar.css';
 
 const Navbar = ({ t }) => {
   const location = useLocation();
+  const [aboutMeActive, setAboutMeActive] = useState(false); // State to store whether the "About Me" section is active
 
-  // Scroll to About Me section
-  const scrollToAboutMe = () => {
+  // Scroll event handler to check if the "About Me" section is in view
+  const handleScroll = () => {
     const aboutMeSection = document.getElementById('about-me-section');
     if (aboutMeSection) {
-      aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+      const scrollPosition = window.scrollY;
+      const aboutMeTop = aboutMeSection.offsetTop;
+      const aboutMeBottom = aboutMeTop + aboutMeSection.offsetHeight;
+      const viewportHeight = window.innerHeight;
+  
+      // Calculate the threshold where "About Me" section starts to enter the viewport
+      const threshold = aboutMeTop - 0.5 * viewportHeight; // Adjust 0.5 as needed
+  
+      if (scrollPosition >= threshold && scrollPosition < aboutMeBottom) {
+        setAboutMeActive(true);
+      } else {
+        setAboutMeActive(false);
+      }
     }
   };
+  
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
 
-  // Handle click on About Me link
-  const handleAboutMeClick = (event) => {
-    event.preventDefault();
-    scrollToAboutMe();
-    // After scrolling, navigate to the home page
-    window.location.href = '/#about-me'; // Redirect to the home page with anchor
-  };
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -33,21 +48,36 @@ const Navbar = ({ t }) => {
         <p className="navbar-name">Matthew Tan</p>
         <ul className="navbar-list">
           <li className="navbar-item">
-            <NavLink 
-              to="/" 
-              exact 
-              className="navbar-link"
-              activeClassName="active"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              <FontAwesomeIcon icon={faHome} /> {t("navBar.Home")}
-            </NavLink>
+          <NavLink 
+  to="/" 
+  exact 
+  className="navbar-link"
+  onClick={(e) => {
+    if (aboutMeActive) {
+      e.preventDefault(); // Prevent default link behavior
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setAboutMeActive(false); // Set aboutMeActive to false when the homepage link is clicked
+    }
+  }}
+>
+  <FontAwesomeIcon icon={faHome} /> {t("navBar.Home")}
+</NavLink>
+
+
+
+
+
           </li>
           <li className="navbar-item">
             <a 
               href="/#about-me" 
-              className={`navbar-link ${location.pathname === '/#about-me' ? 'active' : ''}`}
-              onClick={handleAboutMeClick}
+              className={`navbar-link ${aboutMeActive ? 'active' : ''}`}
+              onClick={() => {
+                const aboutMeSection = document.getElementById('about-me-section');
+                if (aboutMeSection) {
+                  aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <FontAwesomeIcon icon={faUser} /> {t("navBar.About")}
             </a>
@@ -55,8 +85,7 @@ const Navbar = ({ t }) => {
           <li className="navbar-item">
             <NavLink 
               to="/experience" 
-              className="navbar-link"
-              activeClassName="active"
+              className={`navbar-link ${location.pathname === '/experience' ? 'active' : ''}`}
             >
               <FontAwesomeIcon icon={faBriefcase} /> {t("navBar.Experience")}
             </NavLink>
@@ -64,8 +93,7 @@ const Navbar = ({ t }) => {
           <li className="navbar-item">
             <NavLink 
               to="/project" 
-              className="navbar-link"
-              activeClassName="active"
+              className={`navbar-link ${location.pathname === '/project' ? 'active' : ''}`}
             >
               <FontAwesomeIcon icon={faProjectDiagram} /> {t("navBar.Projects")}
             </NavLink>
@@ -73,8 +101,7 @@ const Navbar = ({ t }) => {
           <li className="navbar-item">
             <NavLink 
               to="/contact" 
-              className="navbar-link"
-              activeClassName="active"
+              className={`navbar-link ${location.pathname === '/contact' ? 'active' : ''}`}
             >
               <FontAwesomeIcon icon={faEnvelope} /> {t("navBar.Contact")}
             </NavLink>

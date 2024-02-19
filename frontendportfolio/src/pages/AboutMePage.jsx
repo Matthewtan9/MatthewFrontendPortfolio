@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import '../css/AboutMePage.css';
 
+
 const AboutMePage = () => {
   const { t } = useTranslation();
   const [users, setUsers] = useState([]);
@@ -42,7 +43,7 @@ const AboutMePage = () => {
   }, []);
   const [skills, setSkills] = useState([
     { name: 'Java', level: 90 },
-    { name: 'React', level: 80 },
+    { name: 'React', level: 60 },
     { name: 'C#', level: 70 },
     // Add more skills with their respective levels
   ]);
@@ -70,7 +71,7 @@ const AboutMePage = () => {
     </div>
     <div className="right-section cv-container box">
     <div className="cv-wrapper">
-  <h1>Curious to see my CV?</h1>
+  <h1>{t('cv.bigTitle')}</h1>
   <section className={`download-cv-section slide-up ${isVisible ? 'visible' : ''}`}>
     <h2>{t('cv.title')}</h2>
     <p>{t('cv.description')}</p>
@@ -87,7 +88,7 @@ const AboutMePage = () => {
   </section>
 </div>
 
- <h1>What I am great at</h1>
+ <h1>{t('skill.title')}</h1>
   <section className="skill-section">
     {skills.map((skill) => (
       <div key={skill.name} className="skill">

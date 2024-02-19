@@ -41,9 +41,13 @@ i18next
           },
           cv: {
             title: "My CV",
+            bigTitle: "Curious to see my resume?",
             description:
               "Click the link below to download my CV:",
             download: "Download CV",
+          },
+          skill:{
+            title: "Here are some of my skills"
           },
           footer: {
             contactInformation: "Contact Information",
@@ -161,9 +165,14 @@ i18next
           },
           cv: {
             title: "Mon CV",
+            bigTitle: "Curieux de voir mon CV ?",
             description:
               "Cliquez sur le lien ci-dessous pour télécharger mon CV:",
             download: "Télécharger le CV",
+          },
+
+          skill:{
+            title: "Voici quelques-unes de mes compétences"
           },
           footer: {
             contactInformation: "Informations de contact",

@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'; 
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import '../css/ClassPage.css';
@@ -73,10 +75,16 @@ const ClassPage = () => {
 
     return skillMatch && searchTermMatch && semesterMatch;
   });
+  const goBack = () => {
+    window.history.back(); // Navigate back using browser's built-in functionality
+  };
 
   return (
     <div>
       <Navbar />
+      <button className="back-button" onClick={goBack}>
+        <FontAwesomeIcon icon={faArrowLeft} /> Go Back
+      </button>
       <div className="class-container">
         <h1>{t('class.classes')}</h1>
         <div className="search-container">

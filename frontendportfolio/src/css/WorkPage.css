@@ -16,4 +16,34 @@
   }
   
   /* Add more styles as needed */
+  .back-button {
+    position: fixed;
+    top: 10px;
+    left: 230px;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .back-button:hover {
+    background-color: #76ace5;
+    animation: pulse 0.5s infinite alternate; /* Hover animation */
+  }
+  
+  /* Keyframes for pulse animation */
+  @keyframes pulse {
+    to {
+      transform: scale(1.1); /* Increase size on hover */
+    }
+  }
+  
+  /* Style for the arrow icon */
+  .back-button svg {
+    margin-right: 10px;
+  }
   

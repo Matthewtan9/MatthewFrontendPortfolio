@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import '../css/WorkPage.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const WorkPage = () => {
   const { t } = useTranslation(); // Use the t function for translations
@@ -22,9 +24,16 @@ const WorkPage = () => {
     fetchData();
   }, []); // Empty dependency array to run the effect only once
 
+  const goBack = () => {
+    window.history.back(); // Navigate back using browser's built-in functionality
+  };
+
   return (
     <div>
       <Navbar />
+      <button className="back-button" onClick={goBack}>
+        <FontAwesomeIcon icon={faArrowLeft} /> Go Back
+      </button>
       <div className="work-container">
         <h1>{t('work.work')}</h1>
         {works.map((work) => (
@@ -56,7 +65,7 @@ const WorkPage = () => {
           </div>
         ))}
       </div>
-     
+   
     </div>
   );
 };
