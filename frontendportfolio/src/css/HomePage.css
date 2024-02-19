@@ -3,12 +3,14 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  
 }
 
 
 
 .homepage-container {
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,7 +25,7 @@ html, body {
 
 .text {
   margin-right: 20px;
-  color: #333; /* Dark gray color */
+ color: darkblue;
 }
 
 
@@ -60,6 +62,7 @@ html, body {
   border: 2px solid #ccc;
   border-radius: 8px;
   padding: 20px;
+  
   /* Adjust margin to position the border */
   margin: 10px 200px 20px 300px; /* Increase the right margin value */
   /* Adjust width as needed */

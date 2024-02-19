@@ -49,7 +49,7 @@ const Navbar = ({ t }) => {
               className={`navbar-link ${location.pathname === '/#about-me' ? 'active' : ''}`}
               onClick={handleAboutMeClick}
             >
-              <FontAwesomeIcon icon={faUser} /> About Me
+              <FontAwesomeIcon icon={faUser} /> {t("navBar.About")}
             </a>
           </li>
           <li className="navbar-item">

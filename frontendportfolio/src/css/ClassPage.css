@@ -7,8 +7,9 @@
   }
   
   .class-details {
-    background-color: #fff;
+    background-color:  #f1faee;
     border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;

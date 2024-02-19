@@ -3,21 +3,25 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+
 }
 
 .welcome-title {
   font-size: 24px;
   margin-bottom: 20px;
+  color: darkblue;
 }
 
 .header-section {
   margin-bottom: 40px;
+  
 }
 
 .user-details {
   display: flex;
   align-items: center;
   position: relative;
+  
 }
 
 .section-toggle {
@@ -62,6 +66,7 @@
 
 .right-section {
   flex: 1;
+  
 }
 /* AboutMePage.css */
 
@@ -79,11 +84,12 @@
 
 /* Box styling for each container */
 .box {
-  background-color: lightblue;
+  background-color:  #f1faee;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
   margin-bottom: 20px; /* Add some margin between boxes */
 }
 
@@ -106,7 +112,7 @@
 .download-cv-section a {
   display: center;
   position: center;
-  background-color: #007bff;
+  background-color: darkgreen;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -115,14 +121,13 @@
 }
 
 .download-cv-section a:hover {
-  background-color: #007bff;
+  background-color: lightgreen;
 }
 
 .download-icon {
   display: inline-block;
   width: 30px;
   height: 30px;
-
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -141,7 +146,7 @@
 .skill-bar {
   position: relative;
   height: 20px;
-  background-color: #f25656;
+  background-color: lightgreen;
   border: 1px solid #ccc;
 
   box-sizing: border-box;
@@ -157,5 +162,8 @@
   to { width: var(--skill-level, 0%); } /* Use variable to set the final width */
 }
 body {
-background-color: lightcyan;
+background-color: #f1faee;
+/* background-image: url("background.jpg"); */
+background-position: cover;
+
 }

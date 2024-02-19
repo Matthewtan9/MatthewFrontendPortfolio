@@ -76,7 +76,7 @@ const EducationPage = () => {
           </div>
         ))}
       </div>
-      <Footer />
+ 
     </div>
   );
 };

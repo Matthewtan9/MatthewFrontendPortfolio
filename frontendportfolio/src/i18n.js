@@ -19,9 +19,15 @@ i18next
           
           navBar: {
             Home: "Home",
+            About: "About Me",
             Experience: "Experience",
             Projects: "Projects",
             Contact: "Contact Me",
+          },
+          homePage:{
+            greeting: "Welcome To My Portfolio",
+            type:" I am a software developer",
+            scroll: "Scroll Down"
           },
           aboutMe: {
             greeting: "Hello! I'm {{firstName}} {{lastName}},",
@@ -133,9 +139,15 @@ i18next
         translation: {
           navBar: {
             Home: "Accueil",
+            About: "À propos de moi",
             Experience: "Expérience",
             Projects: "Projets",
             Contact: "Me Contacter",
+          },
+          homePage:{
+            greeting: "Bienvenue Sur Mon Portfolio",
+            type:"Je suis un développeur de logiciels.",
+            scroll: "Défiler vers le bas"
           },
           aboutMe: {
             greeting: "Bonjour! Je m'appelle {{firstName}} {{lastName}},",

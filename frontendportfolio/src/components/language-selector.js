@@ -12,8 +12,11 @@ const LanguageSelector = () => {
 
   const changeLanguage = (e) => {
     const selectedLanguageCode = e.target.value;
-    i18n.changeLanguage(selectedLanguageCode);
+    i18n.changeLanguage(selectedLanguageCode).then(() => {
+      window.location.reload();
+    });
   };
+  
 
   return (
     <div className="select-container">

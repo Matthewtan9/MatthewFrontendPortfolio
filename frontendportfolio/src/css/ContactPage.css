@@ -1,6 +1,7 @@
 /* ContactPage.css */
 
 .contact-container {
+  position: relative; /* Set position to relative */
   display: flex;
   justify-content: center; /* Center horizontally */
   margin-top: 50px; /* Adjust margin as needed */
@@ -8,8 +9,9 @@
 
 .contact-form-section,
 .contact-info-section {
+  position: relative; /* Ensure sections are positioned relative to the container */
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color:  #f1faee;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 1;
@@ -40,6 +42,21 @@
 .contact-section a:hover {
   text-decoration: underline;
 }
+
+/* Add this style for the circle background */
+.contact-container::before {
+  content: '';
+  position: absolute;
+  top: -100px; /* Adjust to position the circle properly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Adjust the width of the circle */
+  height: 300px; /* Adjust the height of the circle */
+  background-color: #f0f0f0; /* Set the background color of the circle */
+  border-radius: 50%; /* Make it a circle */
+  z-index: -1; /* Place it behind the contact form */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

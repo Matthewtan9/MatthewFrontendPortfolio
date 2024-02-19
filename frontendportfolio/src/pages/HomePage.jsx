@@ -7,12 +7,15 @@ import profilePicture from '../images/Profile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = ({ name }) => {
   const [fadeIn, setFadeIn] = useState(false);
   const [typingText, setTypingText] = useState('');
+  const { t } = useTranslation();
   const [isTyping, setIsTyping] = useState(true);
-  const description = "I am a Software Developer";
+  // const description = "I am a Software Developer";
+  const description = t('homePage.type');
   const typingDelay = 100;
   const retypeDelay = 3000;
   const pauseDuration = 3000;
@@ -55,7 +58,7 @@ const HomePage = ({ name }) => {
     <div className="homepage-border">
       <div className={`homepage-container ${fadeIn ? 'fade-in' : ''}`}>
         <NavBar scrollToAbout={scrollToAbout} />
-        <h1 className='Title'>Welcome To My Portfolio</h1>
+        <h1 className='Title'>{t('homePage.greeting')}</h1>
         <div className="content">
           <div className="text">
             <h1 className="welcome">Matthew Tan</h1>
@@ -79,7 +82,7 @@ const HomePage = ({ name }) => {
       </div>
       <div className="scroll-down">
         <FontAwesomeIcon icon={faArrowDown} className="scroll-icon" />
-        <span className="scroll-text">Scroll Down</span>
+        <span className="scroll-text">{t('homePage.scroll')}</span>
       </div>
       
       <AboutMePage ref={aboutMeRef}/>
