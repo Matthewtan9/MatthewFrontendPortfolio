@@ -44,8 +44,8 @@ const AboutMePage = () => {
   const [skills, setSkills] = useState([
     { name: 'Java', level: 90 },
     { name: 'React', level: 60 },
-    { name: 'C#', level: 70 },
-    // Add more skills with their respective levels
+    { name: 'Python', level: 70 },
+
   ]);
   
   return (
