@@ -23,6 +23,30 @@
     color: #666;
     margin: 10px 0;
   }
-  
-  /* You can add more styles based on your design preferences */
-  
+  @media only screen and (max-width: 1025px) {
+    .class-container {
+        max-width: 500px; /* Adjust max-width for screens up to 1025px */
+        margin-right: 50px;
+    }
+}
+
+/* Media query for screens with a maximum width of 521px */
+@media only screen and (max-width: 521px) {
+    .class-container {
+        max-width: 280px; /* Adjust max-width for screens up to 521px */
+        padding-left: 100px; /* Adjust padding for smaller screens */
+    }
+
+    .class-details {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Decrease font size for smaller screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+}

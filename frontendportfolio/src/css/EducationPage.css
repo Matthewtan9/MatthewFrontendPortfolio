@@ -25,4 +25,30 @@
   
   /* Navbar and Footer styling */
   /* Add your own styles or reuse existing styles from your application */
-  
+  @media only screen and (max-width: 1025px) {
+    .education-container {
+        max-width: 500px; /* Adjust max-width for screens up to 1025px */
+        padding-left: 130px;
+    }
+}
+
+/* Media query for screens with a maximum width of 521px */
+@media only screen and (max-width: 521px) {
+    .education-container {
+        max-width: 200px; /* Adjust max-width for screens up to 521px */
+        padding-left: 100px; /* Adjust padding for smaller screens */
+    }
+
+    .education-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .education-item h2 {
+        font-size: 1.2rem; /* Decrease font size for smaller screens */
+    }
+
+    .education-item p {
+        font-size: 0.9rem; /* Decrease font size for smaller screens */
+    }
+}

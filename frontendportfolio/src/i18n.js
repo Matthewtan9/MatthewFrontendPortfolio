@@ -23,6 +23,7 @@ i18next
             Experience: "Experience",
             Projects: "Projects",
             Contact: "Contact Me",
+            Footer :"Matthew Tan's Portfolio. All rights reserved"
           },
           homePage:{
             greeting: "Welcome To My Portfolio",
@@ -147,6 +148,7 @@ i18next
             Experience: "Expérience",
             Projects: "Projets",
             Contact: "Me Contacter",
+            Footer: "Portfolio de Matthew Tan. Tous droits réservés."
           },
           homePage:{
             greeting: "Bienvenue Sur Mon Portfolio",

@@ -39,3 +39,16 @@
 .btn-container button:focus + .dropdown-content {
   display: block;
 }
+/* Translation.css */
+@media screen and (max-width: 320px)
+{
+.select-container {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+select {
+  width: 50px; /* Adjust width as needed */
+  padding: 5px; /* Adjust padding as needed */
+  font-size: 10px; /* Adjust font size as needed */
+}
+}

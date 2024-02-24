@@ -70,4 +70,44 @@
   animation: fadeIn 3s ease forwards;
 
 }
+@media only screen and (max-width: 1025px) {
+  .contact-container {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center; /* Center items vertically */
+  }
 
+  .contact-form-section,
+  .contact-info-section {
+    width: 500px; /* Adjust width for smaller screens */
+    margin: 0; /* Remove horizontal margin for smaller screens */
+    margin-left: 70px;
+  }
+
+  .contact-container::before {
+    width: 250px; /* Adjust the width of the circle for smaller screens */
+    height: 250px; /* Adjust the height of the circle for smaller screens */
+    top: -50px; /* Adjust to position the circle properly for smaller screens */
+  }
+
+}
+
+
+@media only screen and (max-width: 521px) {
+  .contact-container {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  .contact-form-section,
+  .contact-info-section {
+    width: 150px; /* Adjust width for smaller screens */
+    margin: 0; /* Remove horizontal margin for smaller screens */
+    margin-left: 70px;
+  }
+
+  .contact-container::before {
+    width: 250px; /* Adjust the width of the circle for smaller screens */
+    height: 250px; /* Adjust the height of the circle for smaller screens */
+    top: -50px; /* Adjust to position the circle properly for smaller screens */
+  }
+}

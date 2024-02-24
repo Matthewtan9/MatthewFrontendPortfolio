@@ -44,6 +44,35 @@
   
   /* Style for the arrow icon */
   .back-button svg {
-    margin-right: 10px;
+    margin-right: 1px;
   }
+
+
+@media only screen and (max-width: 1025px) {
+  .work-item {
+      width: 500px; /* Adjust width for smaller screens */
+
+      padding: 10px; /* Adjust padding for smaller screens */
+      margin-left: 170px;
+  }
+
+  .back-button {
+    
+      left: calc(50% - 180px); /* Center horizontally for smaller screens */
   
+  }
+}  @media only screen and (max-width: 521px) {
+    .work-item {
+        width: 180px; /* Adjust width for smaller screens */
+      
+       
+        margin-left: 80px;
+    }
+  
+    .back-button {
+      width: 20px;
+      font-size: 10px;
+        left: calc(50% - 80px); /* Center horizontally for smaller screens */
+    
+    }
+}

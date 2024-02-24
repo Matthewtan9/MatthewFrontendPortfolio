@@ -42,3 +42,77 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .project-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-left: 220px;
+  }
+  
+  .project-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+   
+    border-radius: 8px;
+    background-color:  #f1faee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+}  
+  
+
+@media only screen and (max-width: 521px) {
+  .project-container {
+    max-width: 150px; /* Adjust max-width for smaller screens */
+    margin-left:170px; /* Further adjust content margin for smaller screens */
+  }
+
+  .project-item {
+    padding: 10px; /* Decrease padding for smaller screens */
+    margin-bottom: 15px; /* Decrease margin for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+    margin-bottom: 15px; /* Decrease margin for smaller screens */
+  }
+
+  h2 {
+    font-size: 1em; /* Decrease font size for smaller screens */
+  }
+
+  p {
+    font-size: 0.9em; /* Decrease font size for smaller screens */
+  }
+}

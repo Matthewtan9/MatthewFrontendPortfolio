@@ -167,3 +167,63 @@ background-color: #f1faee;
 background-position: cover;
 
 }
+@media screen and (max-width: 320px) {
+  .homepage-container {
+    max-width: 5px; /* Adjust max-width for smaller screens */
+    padding: 130px; /* Adjust padding for smaller screens */
+  }
+
+  .welcome-title {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .header-section {
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .section-toggle {
+    width: 25px; /* Adjust width for smaller screens */
+    height: 25px; /* Adjust height for smaller screens */
+    font-size: 8px; /* Adjust font size for smaller screens */
+  }
+
+  .box {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 10px; /* Adjust margin between boxes for smaller screens */
+  }
+
+  .download-cv-section {
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
+  }
+
+  .download-cv-section h2 {
+    font-size: 8px; /* Adjust font size for smaller screens */
+    margin-bottom: 6px; /* Adjust margin-bottom for smaller screens */
+  }
+
+  .download-cv-section p {
+    margin-bottom: 8px; /* Adjust margin-bottom for smaller screens */
+    font-size: 8px; /* Adjust font size for smaller screens */
+  }
+
+  .download-icon {
+    width: 5px; /* Adjust width for smaller screens */
+    margin-right: 6px; /* Adjust margin-right for smaller screens */
+  }
+.cv-title{
+  font-size: 15px;
+}
+.download-cv-link{
+font-size: 10px;
+}
+.skills-title{
+  font-size: 15px;
+}
+  .skill-bar {
+  font-size: 8px;
+    height: 10px; /* Adjust height for smaller screens */
+  }
+}
+

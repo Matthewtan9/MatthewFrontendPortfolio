@@ -176,3 +176,53 @@ html, body {
     transform: translateY(-5px);
   }
 }
+@media screen and (max-width: 768px) {
+  .homepage-border {
+    margin: 10px 20px 20px 20px; /* Adjust margin for smaller screens */
+  }
+
+  .profile-picture img {
+    width: 150px; /* Adjust profile picture size for smaller screens */
+  }
+
+  @media screen and (max-width: 320px),
+  
+(max-width: 415px) {
+    .homepage-border {
+      margin:  1px 5px 20px 2px;
+    }
+    .scroll-icon{
+      width: 10px;
+  
+    }
+    .scroll-text{
+      font-size: 10px;
+
+    }
+  
+    .profile-picture img {
+      width: 30px;
+    }
+    .Title{
+      font-size: 15px;
+    }
+  
+    .welcome {
+      font-size: 15px;
+    }
+  
+    .name {
+      font-size: 10px;
+    }
+  
+    .text {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+    .icon{
+     width: 10px;
+   
+    
+    }
+  }
+}

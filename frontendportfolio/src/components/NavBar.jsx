@@ -108,7 +108,7 @@ const Navbar = ({ t }) => {
           </li> 
         </ul> 
         <div className="footer-bottom">
-          <p>&copy; 2024 {t("footer.Matthew Tan's Portfolio. All rights reserved.")}</p>
+          <p>&copy; 2024 {t("navBar.Footer")}</p>
         </div>
       </div>
     </nav>
